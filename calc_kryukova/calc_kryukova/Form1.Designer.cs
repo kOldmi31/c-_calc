@@ -49,7 +49,7 @@
             this.num5 = new System.Windows.Forms.Button();
             this.num4 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
-            this.result = new System.Windows.Forms.Button();
+            this.res = new System.Windows.Forms.Button();
             this.comma = new System.Windows.Forms.Button();
             this.story = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
@@ -69,6 +69,7 @@
             devide.TabIndex = 3;
             devide.Text = "÷";
             devide.UseVisualStyleBackColor = false;
+            devide.Click += new System.EventHandler(this.devide_Click);
             // 
             // sum
             // 
@@ -104,6 +105,7 @@
             multiply.TabIndex = 20;
             multiply.Text = "×";
             multiply.UseVisualStyleBackColor = false;
+            multiply.Click += new System.EventHandler(this.multiply_Click);
             // 
             // textBox1
             // 
@@ -120,7 +122,7 @@
             // 
             // percent
             // 
-            this.percent.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.percent.BackColor = System.Drawing.SystemColors.Info;
             this.percent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.percent.Location = new System.Drawing.Point(430, 200);
             this.percent.Name = "percent";
@@ -128,6 +130,7 @@
             this.percent.TabIndex = 1;
             this.percent.Text = "%";
             this.percent.UseVisualStyleBackColor = false;
+            this.percent.Click += new System.EventHandler(this.percent_Click);
             // 
             // button2
             // 
@@ -138,6 +141,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "C";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // num3
             // 
@@ -194,6 +198,7 @@
             this.root.TabIndex = 8;
             this.root.Text = "√";
             this.root.UseVisualStyleBackColor = false;
+            this.root.Click += new System.EventHandler(this.root_Click);
             // 
             // pow_double
             // 
@@ -205,6 +210,7 @@
             this.pow_double.TabIndex = 9;
             this.pow_double.Text = "^2";
             this.pow_double.UseVisualStyleBackColor = false;
+            this.pow_double.Click += new System.EventHandler(this.pow_double_Click);
             // 
             // num6
             // 
@@ -285,7 +291,7 @@
             // 
             // button19
             // 
-            this.button19.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button19.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.button19.Location = new System.Drawing.Point(559, 427);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(107, 82);
@@ -293,20 +299,21 @@
             this.button19.Text = "CE";
             this.button19.UseVisualStyleBackColor = false;
             // 
-            // result
+            // res
             // 
-            this.result.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.result.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.result.Location = new System.Drawing.Point(559, 543);
-            this.result.Name = "result";
-            this.result.Size = new System.Drawing.Size(107, 198);
-            this.result.TabIndex = 21;
-            this.result.Text = "=";
-            this.result.UseVisualStyleBackColor = false;
+            this.res.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.res.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.res.Location = new System.Drawing.Point(559, 543);
+            this.res.Name = "res";
+            this.res.Size = new System.Drawing.Size(107, 198);
+            this.res.TabIndex = 21;
+            this.res.Text = "=";
+            this.res.UseVisualStyleBackColor = false;
+            this.res.Click += new System.EventHandler(this.res_Click_1);
             // 
             // comma
             // 
-            this.comma.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.comma.BackColor = System.Drawing.SystemColors.Info;
             this.comma.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comma.Location = new System.Drawing.Point(299, 659);
             this.comma.Name = "comma";
@@ -318,7 +325,7 @@
             // 
             // story
             // 
-            this.story.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.story.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.story.Location = new System.Drawing.Point(32, 659);
             this.story.Name = "story";
             this.story.Size = new System.Drawing.Size(107, 82);
@@ -335,6 +342,7 @@
             this.delete.TabIndex = 24;
             this.delete.Text = "del";
             this.delete.UseVisualStyleBackColor = false;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // Form1
             // 
@@ -344,7 +352,7 @@
             this.Controls.Add(this.delete);
             this.Controls.Add(this.story);
             this.Controls.Add(this.comma);
-            this.Controls.Add(this.result);
+            this.Controls.Add(this.res);
             this.Controls.Add(multiply);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.num4);
@@ -398,7 +406,7 @@
         private Button num4;
         private Button button19;
         private Button multiply;
-        private Button result;
+        private Button res;
         private Button comma;
         private Button story;
         private Button delete;
