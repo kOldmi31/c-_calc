@@ -48,10 +48,8 @@
             this.num7 = new System.Windows.Forms.Button();
             this.num5 = new System.Windows.Forms.Button();
             this.num4 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
             this.res = new System.Windows.Forms.Button();
             this.comma = new System.Windows.Forms.Button();
-            this.story = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
             devide = new System.Windows.Forms.Button();
             sum = new System.Windows.Forms.Button();
@@ -61,7 +59,7 @@
             // 
             // devide
             // 
-            devide.BackColor = System.Drawing.SystemColors.ButtonFace;
+            devide.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             devide.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             devide.Location = new System.Drawing.Point(430, 312);
             devide.Name = "devide";
@@ -73,7 +71,7 @@
             // 
             // sum
             // 
-            sum.BackColor = System.Drawing.SystemColors.ButtonFace;
+            sum.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             sum.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             sum.Location = new System.Drawing.Point(430, 659);
             sum.Name = "sum";
@@ -85,7 +83,7 @@
             // 
             // min
             // 
-            min.BackColor = System.Drawing.SystemColors.ButtonFace;
+            min.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             min.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             min.Location = new System.Drawing.Point(430, 543);
             min.Name = "min";
@@ -97,7 +95,7 @@
             // 
             // multiply
             // 
-            multiply.BackColor = System.Drawing.SystemColors.ButtonFace;
+            multiply.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             multiply.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             multiply.Location = new System.Drawing.Point(430, 427);
             multiply.Name = "multiply";
@@ -115,14 +113,15 @@
             this.textBox1.Margin = new System.Windows.Forms.Padding(6);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "0";
+            this.textBox1.PlaceholderText = "0 ";
             this.textBox1.Size = new System.Drawing.Size(634, 148);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // percent
             // 
-            this.percent.BackColor = System.Drawing.SystemColors.Info;
+            this.percent.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.percent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.percent.Location = new System.Drawing.Point(430, 200);
             this.percent.Name = "percent";
@@ -131,10 +130,11 @@
             this.percent.Text = "%";
             this.percent.UseVisualStyleBackColor = false;
             this.percent.Click += new System.EventHandler(this.percent_Click);
+            this.percent.MouseHover += new System.EventHandler(this.root_MouseHover);
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button2.BackColor = System.Drawing.SystemColors.ControlDark;
             this.button2.Location = new System.Drawing.Point(559, 312);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(107, 82);
@@ -145,7 +145,7 @@
             // 
             // num3
             // 
-            this.num3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.num3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.num3.Location = new System.Drawing.Point(299, 312);
             this.num3.Name = "num3";
             this.num3.Size = new System.Drawing.Size(107, 82);
@@ -156,7 +156,7 @@
             // 
             // num2
             // 
-            this.num2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.num2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.num2.Location = new System.Drawing.Point(169, 312);
             this.num2.Name = "num2";
             this.num2.Size = new System.Drawing.Size(107, 82);
@@ -167,7 +167,7 @@
             // 
             // num1
             // 
-            this.num1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.num1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.num1.Location = new System.Drawing.Point(32, 312);
             this.num1.Name = "num1";
             this.num1.Size = new System.Drawing.Size(107, 82);
@@ -178,7 +178,7 @@
             // 
             // pow
             // 
-            this.pow.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pow.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pow.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pow.Location = new System.Drawing.Point(299, 200);
             this.pow.Name = "pow";
@@ -190,7 +190,7 @@
             // 
             // root
             // 
-            this.root.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.root.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.root.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.root.Location = new System.Drawing.Point(32, 200);
             this.root.Name = "root";
@@ -202,7 +202,7 @@
             // 
             // pow_double
             // 
-            this.pow_double.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pow_double.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pow_double.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pow_double.Location = new System.Drawing.Point(169, 200);
             this.pow_double.Name = "pow_double";
@@ -214,7 +214,7 @@
             // 
             // num6
             // 
-            this.num6.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.num6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.num6.Location = new System.Drawing.Point(299, 427);
             this.num6.Name = "num6";
             this.num6.Size = new System.Drawing.Size(107, 82);
@@ -225,7 +225,7 @@
             // 
             // num9
             // 
-            this.num9.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.num9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.num9.Location = new System.Drawing.Point(299, 543);
             this.num9.Name = "num9";
             this.num9.Size = new System.Drawing.Size(107, 82);
@@ -236,10 +236,10 @@
             // 
             // num0
             // 
-            this.num0.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.num0.Location = new System.Drawing.Point(169, 659);
+            this.num0.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.num0.Location = new System.Drawing.Point(32, 659);
             this.num0.Name = "num0";
-            this.num0.Size = new System.Drawing.Size(107, 82);
+            this.num0.Size = new System.Drawing.Size(244, 82);
             this.num0.TabIndex = 14;
             this.num0.Text = "0";
             this.num0.UseVisualStyleBackColor = false;
@@ -247,7 +247,7 @@
             // 
             // num8
             // 
-            this.num8.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.num8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.num8.Location = new System.Drawing.Point(169, 543);
             this.num8.Name = "num8";
             this.num8.Size = new System.Drawing.Size(107, 82);
@@ -258,7 +258,7 @@
             // 
             // num7
             // 
-            this.num7.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.num7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.num7.Location = new System.Drawing.Point(32, 543);
             this.num7.Name = "num7";
             this.num7.Size = new System.Drawing.Size(107, 82);
@@ -269,7 +269,7 @@
             // 
             // num5
             // 
-            this.num5.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.num5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.num5.Location = new System.Drawing.Point(169, 427);
             this.num5.Name = "num5";
             this.num5.Size = new System.Drawing.Size(107, 82);
@@ -280,7 +280,7 @@
             // 
             // num4
             // 
-            this.num4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.num4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.num4.Location = new System.Drawing.Point(32, 427);
             this.num4.Name = "num4";
             this.num4.Size = new System.Drawing.Size(107, 82);
@@ -289,23 +289,13 @@
             this.num4.UseVisualStyleBackColor = false;
             this.num4.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.button19.Location = new System.Drawing.Point(559, 427);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(107, 82);
-            this.button19.TabIndex = 19;
-            this.button19.Text = "CE";
-            this.button19.UseVisualStyleBackColor = false;
-            // 
             // res
             // 
             this.res.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.res.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.res.Location = new System.Drawing.Point(559, 543);
+            this.res.Location = new System.Drawing.Point(559, 427);
             this.res.Name = "res";
-            this.res.Size = new System.Drawing.Size(107, 198);
+            this.res.Size = new System.Drawing.Size(107, 314);
             this.res.TabIndex = 21;
             this.res.Text = "=";
             this.res.UseVisualStyleBackColor = false;
@@ -313,7 +303,7 @@
             // 
             // comma
             // 
-            this.comma.BackColor = System.Drawing.SystemColors.Info;
+            this.comma.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comma.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comma.Location = new System.Drawing.Point(299, 659);
             this.comma.Name = "comma";
@@ -323,19 +313,9 @@
             this.comma.UseVisualStyleBackColor = false;
             this.comma.Click += new System.EventHandler(this.comma_Click_1);
             // 
-            // story
-            // 
-            this.story.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.story.Location = new System.Drawing.Point(32, 659);
-            this.story.Name = "story";
-            this.story.Size = new System.Drawing.Size(107, 82);
-            this.story.TabIndex = 23;
-            this.story.Text = "story";
-            this.story.UseVisualStyleBackColor = false;
-            // 
             // delete
             // 
-            this.delete.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.delete.BackColor = System.Drawing.SystemColors.ControlLight;
             this.delete.Location = new System.Drawing.Point(559, 200);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(107, 82);
@@ -350,11 +330,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(704, 772);
             this.Controls.Add(this.delete);
-            this.Controls.Add(this.story);
             this.Controls.Add(this.comma);
             this.Controls.Add(this.res);
             this.Controls.Add(multiply);
-            this.Controls.Add(this.button19);
             this.Controls.Add(this.num4);
             this.Controls.Add(this.num5);
             this.Controls.Add(this.num7);
@@ -404,11 +382,9 @@
         private Button num7;
         private Button num5;
         private Button num4;
-        private Button button19;
         private Button multiply;
         private Button res;
         private Button comma;
-        private Button story;
         private Button delete;
     }
 }
