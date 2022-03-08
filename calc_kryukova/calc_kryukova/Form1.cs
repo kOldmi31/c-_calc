@@ -25,7 +25,7 @@ namespace calc_kryukova
             catch
             {
                 textBox1.Clear();
-                MessageBox.Show("Ошибка ввода.");
+                MessageBox.Show("Сначала введите аргумент!");
             }
         }
 
@@ -40,7 +40,7 @@ namespace calc_kryukova
             catch
             {
                 textBox1.Clear();
-                MessageBox.Show("Ошибка ввода.");
+                MessageBox.Show("Сначала введите аргумент!");
             }
         }
 
@@ -55,7 +55,7 @@ namespace calc_kryukova
             catch
             {
                 textBox1.Clear();
-                MessageBox.Show("Ошибка ввода.");
+                MessageBox.Show("Сначала введите аргумент!");
             }
         }
 
@@ -71,7 +71,7 @@ namespace calc_kryukova
             catch
             {
                 textBox1.Clear();
-                MessageBox.Show("Ошибка ввода.");
+                MessageBox.Show("Сначала введите аргумент!");
             }
         }
 
@@ -86,7 +86,7 @@ namespace calc_kryukova
             catch
             {
                 textBox1.Clear();
-                MessageBox.Show("Ошибка ввода.");
+                MessageBox.Show("Сначала введите аргумент!");
             }
         }
 
@@ -101,7 +101,7 @@ namespace calc_kryukova
             catch
             {
                 textBox1.Clear();
-                MessageBox.Show("Ошибка ввода.");
+                MessageBox.Show("Сначала введите аргумент!");
             }
         }
 
@@ -132,7 +132,7 @@ namespace calc_kryukova
             catch
             {
                 textBox1.Clear();
-                MessageBox.Show("Ошибка ввода.");
+                MessageBox.Show("Сначала введите аргумент!");
             }
         }
 
@@ -147,7 +147,7 @@ namespace calc_kryukova
             catch
             {
                 textBox1.Clear();
-                MessageBox.Show("Ошибка ввода.");
+                MessageBox.Show("Сначала введите аргумент!");
             }
         }
 
@@ -172,8 +172,16 @@ namespace calc_kryukova
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            textBox1.Text = textBox1.Text.Replace(',', '.');
             textBox1.SelectionStart = textBox1.Text.Length;
+        }
+
+        //ограничение на ввод букв с клавиатуры + запятая
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsNumber(e.KeyChar) | (e.KeyChar == Convert.ToChar(",")) | e.KeyChar == '\b') return;
+            else
+                MessageBox.Show("Вы пытаетесь ввести символ. Пожалуйста,введите цифрy!");
+                e.Handled = true;
         }
 
         private void comma_Click_1(object sender, EventArgs e)
